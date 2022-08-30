@@ -25,9 +25,19 @@
 
 
 
+                console.log('111');
+
+                
+
+                let FetchResult = await fetch('/Pages/Test.html');
 
 
-                LoadPage('Test');
+                console.log(FetchResult);
+
+
+
+
+                //LoadPage('Test');
 
 
 
@@ -59,7 +69,7 @@
                 console.log(FetchResult);
 
 
-                
+
 
                 if (!FetchResult.ok)
                     return;
