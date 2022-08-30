@@ -30,7 +30,7 @@
                 LoadPage('Test');
 
 
-                
+
 
 
 
@@ -54,6 +54,13 @@
             {
                 // set FetchResult
                 let FetchResult = await fetch('/Pages/' + PageName + '.html');
+
+
+                console.log(FetchResult);
+
+
+                
+
                 if (!FetchResult.ok)
                     return;
 
