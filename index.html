@@ -34,7 +34,7 @@
                 
                 LoadPage('Test');
 
-                
+
 
 
 
@@ -61,7 +61,14 @@
             {
                 // set FetchResult
                 //let FetchResult = await fetch('/Pages/' + PageName + '.html');
-                let FetchResult = await fetch(location.href + 'Pages/' + PageName + '.html');
+
+
+
+                let URL = location.href + 'Pages/' + PageName + '.html';
+
+                let FetchResult = await fetch(URL);
+
+                
 
 
                 console.log(FetchResult);
