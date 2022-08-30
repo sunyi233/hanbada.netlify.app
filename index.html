@@ -55,18 +55,19 @@
                     return;
 
                 // set body
-                const Test = await FetchResult.text();
+                window.document.body.innerHTML = await FetchResult.text();
 
-
-                window.document.body.innerHTML = Test;
-
-
-
-
-
-                console.log(Test);
 
                 
+
+
+
+
+                //const Test = await FetchResult.text();
+                //window.document.body.innerHTML = Test;
+                //console.log(Test);
+
+
 
 
 
