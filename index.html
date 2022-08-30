@@ -22,16 +22,6 @@
         <script>
             window.onload = async () =>
             {
-
-
-
-
-
-
-
-
-
-                
                 LoadPage('Test');
 
 
@@ -60,55 +50,12 @@
             async function LoadPage(PageName)
             {
                 // set FetchResult
-                //let FetchResult = await fetch('/Pages/' + PageName + '.html');
-
-
-
-                let URL = location.href + 'Pages/' + PageName + '.html';
-
-
-                console.log(URL);
-
-                
-
-
-                let FetchResult = await fetch(URL);
-
-
-
-
-                console.log(FetchResult);
-
-
-
-
+                let FetchResult = await fetch(location.href + 'Pages/' + PageName + '.html');
                 if (!FetchResult.ok)
                     return;
 
                 // set body
                 window.document.body.innerHTML = await FetchResult.text();
-
-
-
-
-
-                //console.log(location.href);
-                // https://sunyi233.github.io/hanbada.netlify.app/
-
-
-
-
-
-                //let FetchResult = await fetch('/Pages/Test.html');
-                //let FetchResult = await fetch(location.href + 'Pages/Test.html');
-                //console.log(FetchResult);
-
-
-
-
-
-
-
             }
         </script>
     </head>
